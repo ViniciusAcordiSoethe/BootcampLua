@@ -4,7 +4,7 @@ function Nave:new()
     self.image = love.graphics.newImage("images/trevor.jpg")
     self.x , self.y = 400 , 300
     self.largura , self.altura = 50 , 50
-    self.velocidade = 200
+    self.velocidade = 220
 end
 function Nave:update(dt)
     self:mover(dt)
@@ -12,7 +12,7 @@ function Nave:update(dt)
 end
 function Nave:draw()
     --love.graphics.rectangle("fill", self.x, self.y, self.largura, self.altura)
-    love.graphics.draw(self.image ,self.x, self.y)
+    love.graphics.draw(self.image ,self.x, self.y , 0.1 , 0.1)
 end
 
 function Nave:mover(dt)
